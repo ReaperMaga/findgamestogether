@@ -1,0 +1,27 @@
+{
+  "name": "findgamestogether",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "oxlint .",
+    "typecheck": "nuxt typecheck"
+  },
+  "dependencies": {
+    "@iconify-json/lucide": "^1.2.123",
+    "@iconify-json/simple-icons": "^1.2.93",
+    "@nuxt/ui": "^4.10.0",
+    "@nuxtjs/kinde": "^0.4.0",
+    "nuxt": "^4.5.2",
+    "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "oxlint": "^1.78.0",
+    "typescript": "^6.0.3",
+    "vue-tsc": "^3.3.10"
+  },
+  "packageManager": "pnpm@11.22.0"
+}
