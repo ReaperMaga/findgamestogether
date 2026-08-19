@@ -1,45 +1,24 @@
-<script setup>
+<script setup lang="ts">
 useHead({
-  meta: [
-    { name: 'viewport', content: 'width=device-width, initial-scale=1' }
-  ],
-  link: [
-    { rel: 'icon', href: '/favicon.ico' }
-  ],
-  htmlAttrs: {
-    lang: 'en'
-  }
+  meta: [{ name: 'viewport', content: 'width=device-width, initial-scale=1' }],
+  link: [{ rel: 'icon', href: '/favicon.ico' }],
+  htmlAttrs: { lang: 'en' }
 })
 
-const title = 'Nuxt Starter Template'
-const description = 'A production-ready starter template powered by Nuxt UI. Build beautiful, accessible, and performant applications in minutes, not hours.'
+const title = 'Find Games Together'
+const description = 'Get multiplayer game recommendations based on what your group actually plays.'
 
-useSeoMeta({
-  title,
-  description,
-  ogTitle: title,
-  ogDescription: description,
-  ogImage: 'https://ui.nuxt.com/assets/templates/nuxt/starter-light.png',
-  twitterCard: 'summary_large_image'
-})
+useSeoMeta({ title, titleTemplate: title, description, ogTitle: title, ogDescription: description, twitterCard: 'summary' })
 </script>
 
 <template>
   <UApp>
-    <UHeader>
-      <template #left>
-        
-      </template>
-    </UHeader>
-
-    <UMain>
-      <NuxtPage />
-    </UMain>
-
-    <USeparator icon="i-simple-icons-nuxtdotjs" />
+    <UMain><NuxtPage /></UMain>
 
     <UFooter>
-     
+      <template #left>
+        <p class="text-sm text-muted">Game recommendations based on public Steam data.</p>
+      </template>
     </UFooter>
   </UApp>
 </template>

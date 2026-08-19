@@ -1,64 +1,74 @@
-# Nuxt Starter Template
+# Find Games Together
 
-[![Nuxt UI](https://img.shields.io/badge/Made%20with-Nuxt%20UI-00DC82?logo=nuxt&labelColor=020420)](https://ui.nuxt.com)
+A platform for finding Steam games that match genres you and your friends both enjoy and can play together.
 
-Use this template to get started with [Nuxt UI](https://ui.nuxt.com) quickly.
+Find Games Together takes the friction out of choosing what to play. Add two to six Steam profiles and get multiplayer recommendations based on games sampled from each person’s library. The group does not need to own the same games.
 
-- [Live demo](https://starter-template.nuxt.dev/)
-- [Documentation](https://ui.nuxt.com/docs/getting-started/installation/nuxt)
+## Features
 
-<a href="https://starter-template.nuxt.dev/" target="_blank">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-dark.png">
-    <source media="(prefers-color-scheme: light)" srcset="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png">
-    <img alt="Nuxt Starter Template" src="https://ui.nuxt.com/assets/templates/nuxt/starter-light.png" width="830" height="466">
-  </picture>
-</a>
+- Analyze a random selection from the public Steam libraries of 2-6 players.
+- Accept profile URLs, SteamID64 values, and Steam vanity names.
+- Infer a shared taste profile from each person's sampled games without weighting by playtime.
+- Discover new candidates through Steam's similar-game recommendations.
+- Recommend multiplayer games that fit multiple players' histories.
+- Exclude games the entire group already owns.
+- Show existing ownership as context, not as the matching criteria.
+- Optionally narrow recommendations to selected genres.
+- Rank results only by how strongly Steam's similar-game results overlap across players.
 
-> The starter template for Vue is on https://github.com/nuxt-ui-templates/starter-vue.
+## Tech stack
 
-## Quick Start
+- [Nuxt](https://nuxt.com/)
+- [Nuxt UI](https://ui.nuxt.com/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Oxlint](https://oxc.rs/docs/guide/usage/linter.html)
+- TypeScript
 
-```bash [Terminal]
-npm create nuxt@latest -- -t ui
-```
+## Local development
 
-## Deploy your own
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-name=starter&repository-url=https%3A%2F%2Fgithub.com%2Fnuxt-ui-templates%2Fstarter&demo-image=https%3A%2F%2Fui.nuxt.com%2Fassets%2Ftemplates%2Fnuxt%2Fstarter-dark.png&demo-url=https%3A%2F%2Fstarter-template.nuxt.dev%2F&demo-title=Nuxt%20Starter%20Template&demo-description=A%20minimal%20template%20to%20get%20started%20with%20Nuxt%20UI.)
-
-## Setup
-
-Make sure to install the dependencies:
+Install the dependencies:
 
 ```bash
 pnpm install
 ```
 
-## Development Server
+Create your local environment file:
 
-Start the development server on `http://localhost:3000`:
+```bash
+cp .env.example .env
+```
+
+Fill in `NUXT_STEAM_API_KEY` in `.env`. You can create a Steam Web API key at [steamcommunity.com/dev/apikey](https://steamcommunity.com/dev/apikey).
+
+Start the development server:
 
 ```bash
 pnpm dev
 ```
 
-## Production
+The application will be available at [http://localhost:3000](http://localhost:3000).
 
-Build the application for production:
+## How recommendations work
+
+For every search and reroll, the server takes a new random, equally sized sample from each player's library and uses Steam's public **More Like This** results to build a candidate set. Playtime and recency are not used. Multiplayer candidates are ranked only by how many players' sampled games led to them and how highly they appeared in Steam's similar-game results. Games already owned by everyone are removed.
+
+## Steam privacy requirements
+
+Every player being compared must make both **Profile** and **Game details** public in Steam's privacy settings. Private libraries cannot be read by the Steam Web API. API credentials remain server-only, and the browser only receives the recommendation result.
+
+## Quality checks
 
 ```bash
+pnpm lint
+pnpm typecheck
 pnpm build
 ```
 
-Locally preview production build:
+## Production
+
+Build and preview the production application:
 
 ```bash
+pnpm build
 pnpm preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
-
-## Renovate integration
-
-Install [Renovate GitHub app](https://github.com/apps/renovate/installations/select_target) on your repository and you are good to go.
