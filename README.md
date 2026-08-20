@@ -2,6 +2,11 @@
 
 A platform for finding Steam games that match genres you and your friends both enjoy and can play together.
 
+<p align="center">
+  <a href="screenshots/screenshot-1.jpg"><img src="screenshots/screenshot-1.jpg" width="49%" alt="Find Games Together Steam profile form"></a>
+  <a href="screenshots/screenshot-2.jpg"><img src="screenshots/screenshot-2.jpg" width="49%" alt="Find Games Together recommendation results"></a>
+</p>
+
 Find Games Together takes the friction out of choosing what to play. Add two to six Steam profiles and get multiplayer recommendations based on games sampled from each person’s library. The group does not need to own the same games.
 
 ## Features
