@@ -71,7 +71,17 @@ pnpm build
 
 ## Production
 
-Build and preview the production application:
+The `Deploy to Cloudflare Workers` GitHub workflow deploys pushes to `main` to
+[findgamestogether.online](https://findgamestogether.online). Configure these
+repository or `production` environment secrets before running it:
+
+- `CLOUDFLARE_API_TOKEN`: a Cloudflare API token with Workers Scripts and zone
+  DNS edit permissions for `findgamestogether.online`.
+- `CLOUDFLARE_ACCOUNT_ID`: the Cloudflare account that owns the zone.
+- `NUXT_STEAM_API_KEY`: the server-only Steam Web API key. The workflow uploads
+  it as an encrypted Cloudflare Worker secret.
+
+Build and preview the production application locally:
 
 ```bash
 pnpm build

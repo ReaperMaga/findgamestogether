@@ -8,6 +8,10 @@ export default defineNuxtConfig({
     steamApiKey: ''
   },
 
+  nitro: {
+    preset: 'cloudflare'
+  },
+
   devtools: {
     enabled: true
   },
