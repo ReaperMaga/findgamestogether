@@ -4,6 +4,15 @@ export default defineNuxtConfig({
     '@nuxt/ui'
   ],
 
+  ui: {
+    fonts: false
+  },
+
+  colorMode: {
+    preference: 'dark',
+    fallback: 'dark'
+  },
+
   runtimeConfig: {
     steamApiKey: ''
   },
@@ -20,7 +29,7 @@ export default defineNuxtConfig({
     enabled: true
   },
 
-  css: ['~/assets/css/main.css'],
+  css: ['@fontsource-variable/archivo/wdth.css', '~/assets/css/main.css'],
 
   compatibilityDate: '2026-08-21'
 })

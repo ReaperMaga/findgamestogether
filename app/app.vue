@@ -13,12 +13,25 @@ useSeoMeta({ title, titleTemplate: title, description, ogTitle: title, ogDescrip
 
 <template>
   <UApp>
-    <UMain><NuxtPage /></UMain>
+    <header class="border-b border-default">
+      <div class="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4 sm:px-6">
+        <NuxtLink to="/" class="flex items-center gap-2.5 rounded-sm text-highlighted">
+          <AppMark class="size-6" />
+          <span class="font-tag text-lg leading-none">Find Games Together</span>
+        </NuxtLink>
+        <UColorModeButton color="neutral" variant="ghost" />
+      </div>
+    </header>
 
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-muted">Game recommendations based on public Steam data.</p>
-      </template>
-    </UFooter>
+    <UMain>
+      <NuxtPage />
+    </UMain>
+
+    <footer class="border-t border-default">
+      <div class="mx-auto flex max-w-6xl flex-col gap-2 px-4 py-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between sm:px-6">
+        <p>Game recommendations based on public Steam data.</p>
+        <p class="text-dimmed">Rerolls start from different favorite games each time.</p>
+      </div>
+    </footer>
   </UApp>
 </template>

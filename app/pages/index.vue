@@ -13,6 +13,7 @@ const search = ref('')
 const sort = ref<SortOption>('best')
 const excludedSimilarTo = ref<string[]>([])
 const seenGameIds = ref<number[]>([])
+const usedSeedIds = ref<number[]>([])
 
 const canSubmit = computed(() => profiles.value.length >= 2 && profiles.value.every(profile => profile.trim()) && !loading.value && !rerolling.value)
 const similarToItems = computed(() => [...new Set(
@@ -26,11 +27,14 @@ const visibleGames = computed(() => {
     && !game.similarTo.some(sourceGame => excludedSources.has(sourceGame))
   )
 
+  // The server already ranks by group fit, review quality and variety.
+  if (sort.value === 'best') return games
+
   return games.toSorted((a, b) => {
-    if (sort.value === 'rating') return (b.metacritic || 0) - (a.metacritic || 0)
+    if (sort.value === 'rating') return (b.reviewScore ?? b.metacritic ?? 0) - (a.reviewScore ?? a.metacritic ?? 0)
     if (sort.value === 'least-owned') return a.ownedByCount - b.ownedByCount || b.score - a.score
     if (sort.value === 'most-owned') return b.ownedByCount - a.ownedByCount || b.score - a.score
-    return b.score - a.score
+    return 0
   })
 })
 
@@ -78,18 +82,21 @@ async function loadRecommendations(excludedAppIds: number[], reroll = false) {
   if (!reroll) {
     results.value = null
     seenGameIds.value = []
+    usedSeedIds.value = []
   }
 
   const request: RecommendationRequest = {
     profiles: profiles.value.map(profile => profile.trim()),
     genres: selectedGenres.value,
-    excludedAppIds
+    excludedAppIds,
+    excludedSeedIds: reroll ? usedSeedIds.value : []
   }
 
   try {
     const nextResults = await $fetch<RecommendationsResponse>('/api/steam/recommendations', { method: 'POST', body: request })
     results.value = nextResults
     seenGameIds.value = [...new Set([...seenGameIds.value, ...nextResults.games.map(game => game.appId)])]
+    usedSeedIds.value = [...new Set([...usedSeedIds.value, ...nextResults.seedAppIds])]
     clearResultFilters()
     await nextTick()
     document.querySelector('#results')?.scrollIntoView({ behavior: 'smooth', block: 'start' })
@@ -113,17 +120,19 @@ async function rerollGames() {
 </script>
 
 <template>
-  <UContainer class="py-12 sm:py-16">
-    <HomeHeroSection />
+  <div class="mx-auto flex max-w-6xl flex-col gap-12 px-4 py-12 sm:gap-16 sm:px-6 sm:py-16">
+    <div class="flex flex-col gap-10">
+      <HomeHeroSection />
 
-    <HomeRecommendationForm
-      v-model:profiles="profiles"
-      v-model:selected-genres="selectedGenres"
-      :error-message="errorMessage"
-      :loading="loading"
-      :can-submit="canSubmit"
-      @submit="findGames"
-    />
+      <HomeRecommendationForm
+        v-model:profiles="profiles"
+        v-model:selected-genres="selectedGenres"
+        :error-message="errorMessage"
+        :loading="loading"
+        :can-submit="canSubmit"
+        @submit="findGames"
+      />
+    </div>
 
     <HomeRecommendationResults
       v-if="results"
@@ -138,5 +147,5 @@ async function rerollGames() {
       @clear-filters="clearResultFilters"
       @reroll="rerollGames"
     />
-  </UContainer>
+  </div>
 </template>

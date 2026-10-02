@@ -16,7 +16,10 @@ export type SteamGenre = (typeof STEAM_GENRES)[number]
 export interface RecommendationRequest {
   profiles: string[]
   genres?: SteamGenre[]
+  /** Games already shown in this session; rerolls never repeat them. */
   excludedAppIds?: number[]
+  /** Seed games already used in this session; rerolls start from different favorites. */
+  excludedSeedIds?: number[]
 }
 
 export interface SteamPlayer {
@@ -25,6 +28,8 @@ export interface SteamPlayer {
   avatarUrl: string
   profileUrl: string
   gameCount: number
+  /** False when the profile hides playtime, so seeds were sampled at random. */
+  playtimeVisible: boolean
 }
 
 export interface PlayerGameStatus {
@@ -55,7 +60,11 @@ export interface GameRecommendation {
   players: PlayerGameStatus[]
   genreMatches: string[]
   similarTo: string[]
+  /** Match, 0–100: group fit weighted by review quality and variety. Results are ordered by it. */
   score: number
+  /** Share of positive Steam reviews, 0–100, when known. */
+  reviewScore?: number
+  reviewCount?: number
 }
 
 export interface RecommendationsResponse {
@@ -66,5 +75,7 @@ export interface RecommendationsResponse {
   candidateGameCount: number
   analyzedGameCount: number
   warnings: string[]
+  /** Seed games used for this result, so the next reroll can pick others. */
+  seedAppIds: number[]
   generatedAt: string
 }

@@ -1,0 +1,731 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-02T01:07:34.272Z",
+  "title": "Design System: Find Games Together",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ground",
+        "canonical": "oklch(16.9% 0.004 286.0)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#808083",
+          "#a4a4a7",
+          "#cacacd",
+          "#eeeef1"
+        ]
+      },
+      "ground-muted": {
+        "role": "neutral",
+        "displayName": "Ground Muted",
+        "canonical": "oklch(19.7% 0.006 285.8)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242427",
+          "#3f3f43",
+          "#5d5d61",
+          "#808084",
+          "#a4a4a8",
+          "#cacace",
+          "#eeeef2"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel",
+        "canonical": "oklch(21.0% 0.006 285.9)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242427",
+          "#3f3f43",
+          "#5d5d61",
+          "#808084",
+          "#a4a4a8",
+          "#cacace",
+          "#eeeef2"
+        ]
+      },
+      "surface-elevated": {
+        "role": "neutral",
+        "displayName": "Surface Elevated",
+        "canonical": "oklch(22.8% 0.008 285.8)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242428",
+          "#3f3f44",
+          "#5d5d62",
+          "#808085",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef4"
+        ]
+      },
+      "surface-accented": {
+        "role": "neutral",
+        "displayName": "Surface Accented",
+        "canonical": "oklch(27.1% 0.009 285.8)",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#232328",
+          "#3f3f44",
+          "#5d5d63",
+          "#7f7f86",
+          "#a4a4aa",
+          "#cacad0",
+          "#eeeef5"
+        ]
+      },
+      "seam": {
+        "role": "neutral",
+        "displayName": "Seam",
+        "canonical": "oklch(28.3% 0.009 285.8)",
+        "tonalRamp": [
+          "#0b0b0f",
+          "#232328",
+          "#3f3f44",
+          "#5d5d63",
+          "#7f7f86",
+          "#a4a4aa",
+          "#cacad0",
+          "#eeeef4"
+        ]
+      },
+      "seam-muted": {
+        "role": "neutral",
+        "displayName": "Seam Muted",
+        "canonical": "oklch(24.5% 0.008 285.8)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242428",
+          "#3f3f44",
+          "#5d5d62",
+          "#808085",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef3"
+        ]
+      },
+      "seam-accented": {
+        "role": "neutral",
+        "displayName": "Seam Accented",
+        "canonical": "oklch(35.5% 0.012 285.8)",
+        "tonalRamp": [
+          "#0b0a10",
+          "#23232a",
+          "#3f3f46",
+          "#5d5d64",
+          "#7f7f87",
+          "#a4a4ac",
+          "#c9c9d2",
+          "#ededf6"
+        ]
+      },
+      "bone": {
+        "role": "primary",
+        "displayName": "Bone",
+        "canonical": "oklch(95.8% 0.007 97.4)",
+        "tonalRamp": [
+          "#0c0b08",
+          "#252420",
+          "#41403c",
+          "#5e5e59",
+          "#81807c",
+          "#a6a5a0",
+          "#cbcbc6",
+          "#efeeea"
+        ]
+      },
+      "text-default": {
+        "role": "neutral",
+        "displayName": "Text Default",
+        "canonical": "oklch(89.5% 0.004 286.3)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#808082",
+          "#a4a4a7",
+          "#cacacd",
+          "#eeeef1"
+        ]
+      },
+      "text-toned": {
+        "role": "neutral",
+        "displayName": "Text Toned",
+        "canonical": "oklch(81.9% 0.007 286.2)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242427",
+          "#3f3f43",
+          "#5d5d61",
+          "#808084",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef3"
+        ]
+      },
+      "text-muted": {
+        "role": "neutral",
+        "displayName": "Text Muted",
+        "canonical": "oklch(69.5% 0.012 286.1)",
+        "tonalRamp": [
+          "#0b0a10",
+          "#23232a",
+          "#3f3f46",
+          "#5d5d64",
+          "#7f7f87",
+          "#a4a4ac",
+          "#cacad2",
+          "#ededf6"
+        ]
+      },
+      "text-dimmed": {
+        "role": "neutral",
+        "displayName": "Text Dimmed",
+        "canonical": "oklch(63.6% 0.012 286.1)",
+        "tonalRamp": [
+          "#0b0a10",
+          "#23232a",
+          "#3f3f46",
+          "#5d5d64",
+          "#7f7f87",
+          "#a4a4ac",
+          "#c9c9d2",
+          "#ededf6"
+        ]
+      },
+      "p1-blue": {
+        "role": "secondary",
+        "displayName": "P1 Blue",
+        "canonical": "oklch(68.1% 0.168 261.4)",
+        "tonalRamp": [
+          "#00042f",
+          "#001a61",
+          "#043691",
+          "#2056bb",
+          "#467ce0",
+          "#74a4f9",
+          "#a9cbff",
+          "#dfefff"
+        ]
+      },
+      "p2-red": {
+        "role": "secondary",
+        "displayName": "P2 Red",
+        "canonical": "oklch(69.5% 0.195 26.3)",
+        "tonalRamp": [
+          "#260000",
+          "#520000",
+          "#7f0006",
+          "#a92323",
+          "#cf5049",
+          "#ed8077",
+          "#ffb4ab",
+          "#ffe4df"
+        ]
+      },
+      "p3-green": {
+        "role": "secondary",
+        "displayName": "P3 Green",
+        "canonical": "oklch(73.0% 0.167 150.3)",
+        "tonalRamp": [
+          "#001300",
+          "#003300",
+          "#005400",
+          "#007521",
+          "#059a48",
+          "#5ebc77",
+          "#9fdcab",
+          "#dbf7e0"
+        ]
+      },
+      "p4-amber": {
+        "role": "secondary",
+        "displayName": "P4 Amber",
+        "canonical": "oklch(81.4% 0.160 73.8)",
+        "tonalRamp": [
+          "#1f0100",
+          "#461000",
+          "#6e2900",
+          "#914900",
+          "#b76d00",
+          "#d79631",
+          "#efc286",
+          "#ffebcf"
+        ]
+      },
+      "p5-violet": {
+        "role": "secondary",
+        "displayName": "P5 Violet",
+        "canonical": "oklch(70.7% 0.180 299.9)",
+        "tonalRamp": [
+          "#120029",
+          "#300657",
+          "#4f1f84",
+          "#6e3ead",
+          "#9065d2",
+          "#b290ed",
+          "#d3bdfe",
+          "#f2e9ff"
+        ]
+      },
+      "p6-pink": {
+        "role": "secondary",
+        "displayName": "P6 Pink",
+        "canonical": "oklch(73.4% 0.186 355.3)",
+        "tonalRamp": [
+          "#23000d",
+          "#4d0027",
+          "#780043",
+          "#a12362",
+          "#c74f84",
+          "#e67ea8",
+          "#fcb2cd",
+          "#ffe3f0"
+        ]
+      },
+      "light-ground": {
+        "role": "neutral",
+        "displayName": "Light Ground",
+        "canonical": "oklch(97.3% 0.003 106.4)",
+        "tonalRamp": [
+          "#0b0b0a",
+          "#242423",
+          "#40403e",
+          "#5e5e5c",
+          "#80807e",
+          "#a5a5a3",
+          "#cacac9",
+          "#eeeeec"
+        ]
+      },
+      "light-panel": {
+        "role": "neutral",
+        "displayName": "Light Panel",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#808080",
+          "#a4a4a4",
+          "#cacaca",
+          "#eeeeee"
+        ]
+      },
+      "light-surface-elevated": {
+        "role": "neutral",
+        "displayName": "Light Surface Elevated",
+        "canonical": "oklch(93.3% 0.004 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242422",
+          "#40403d",
+          "#5e5e5b",
+          "#80807e",
+          "#a5a5a2",
+          "#cbcbc8",
+          "#efefec"
+        ]
+      },
+      "light-seam": {
+        "role": "neutral",
+        "displayName": "Light Seam",
+        "canonical": "oklch(89.3% 0.005 106.5)",
+        "tonalRamp": [
+          "#0b0b09",
+          "#242421",
+          "#40403d",
+          "#5e5e5a",
+          "#80807d",
+          "#a5a5a1",
+          "#cbcbc7",
+          "#efefeb"
+        ]
+      },
+      "light-seam-accented": {
+        "role": "neutral",
+        "displayName": "Light Seam Accented",
+        "canonical": "oklch(81.9% 0.007 106.6)",
+        "tonalRamp": [
+          "#0b0b08",
+          "#242420",
+          "#40403c",
+          "#5e5e59",
+          "#80807c",
+          "#a5a5a0",
+          "#cbcbc6",
+          "#efefea"
+        ]
+      },
+      "light-ink": {
+        "role": "primary",
+        "displayName": "Ink (light-mode Bone role)",
+        "canonical": "oklch(18.3% 0.004 286.0)",
+        "tonalRamp": [
+          "#0b0b0d",
+          "#242426",
+          "#3f3f42",
+          "#5d5d60",
+          "#808082",
+          "#a4a4a7",
+          "#cacacd",
+          "#eeeef1"
+        ]
+      },
+      "light-text-default": {
+        "role": "neutral",
+        "displayName": "Light Text Default",
+        "canonical": "oklch(28.7% 0.007 285.9)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242427",
+          "#3f3f43",
+          "#5d5d62",
+          "#808084",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef3"
+        ]
+      },
+      "light-text-muted": {
+        "role": "neutral",
+        "displayName": "Light Text Muted",
+        "canonical": "oklch(49.4% 0.008 286.1)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242328",
+          "#3f3f44",
+          "#5d5d62",
+          "#808085",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef4"
+        ]
+      },
+      "light-text-dimmed": {
+        "role": "neutral",
+        "displayName": "Light Text Dimmed",
+        "canonical": "oklch(52.9% 0.008 286.1)",
+        "tonalRamp": [
+          "#0b0b0e",
+          "#242428",
+          "#3f3f44",
+          "#5d5d62",
+          "#808085",
+          "#a4a4a9",
+          "#cacacf",
+          "#eeeef4"
+        ]
+      },
+      "light-p1-blue": {
+        "role": "secondary",
+        "displayName": "P1 Blue (light)",
+        "canonical": "oklch(54.6% 0.215 262.9)",
+        "tonalRamp": [
+          "#00042f",
+          "#001a61",
+          "#0c3591",
+          "#2655bb",
+          "#4a7be0",
+          "#77a3f9",
+          "#abcbff",
+          "#dfefff"
+        ]
+      },
+      "light-p2-red": {
+        "role": "secondary",
+        "displayName": "P2 Red (light)",
+        "canonical": "oklch(57.7% 0.207 26.7)",
+        "tonalRamp": [
+          "#260000",
+          "#520000",
+          "#7f0005",
+          "#a82322",
+          "#cf5048",
+          "#ed8176",
+          "#ffb4aa",
+          "#ffe4df"
+        ]
+      },
+      "light-p3-green": {
+        "role": "secondary",
+        "displayName": "P3 Green (light)",
+        "canonical": "oklch(52.7% 0.138 149.7)",
+        "tonalRamp": [
+          "#001300",
+          "#003200",
+          "#00520c",
+          "#00722e",
+          "#359651",
+          "#5fbc75",
+          "#9fdcab",
+          "#dbf7df"
+        ]
+      },
+      "light-p4-amber": {
+        "role": "secondary",
+        "displayName": "P4 Amber (light)",
+        "canonical": "oklch(56.3% 0.128 63.8)",
+        "tonalRamp": [
+          "#210000",
+          "#4a0700",
+          "#6b2a00",
+          "#8d4a00",
+          "#b46d19",
+          "#dc9246",
+          "#f5be8b",
+          "#ffe9d1"
+        ]
+      },
+      "light-p5-violet": {
+        "role": "secondary",
+        "displayName": "P5 Violet (light)",
+        "canonical": "oklch(54.1% 0.247 293.0)",
+        "tonalRamp": [
+          "#0f002c",
+          "#2a095b",
+          "#472389",
+          "#6542b2",
+          "#8669d7",
+          "#a893f1",
+          "#ccc0ff",
+          "#efeaff"
+        ]
+      },
+      "light-p6-pink": {
+        "role": "secondary",
+        "displayName": "P6 Pink (light)",
+        "canonical": "oklch(55.4% 0.204 359.5)",
+        "tonalRamp": [
+          "#23000a",
+          "#4e0022",
+          "#7a003d",
+          "#a3215a",
+          "#c94e7d",
+          "#e87ea2",
+          "#fdb2c8",
+          "#ffe3ed"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The page question and every numeral that matters: P-numbers, rank, match %, start label. Archivo 800 at wdth 70%, uppercase."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Results heading."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "In-flow section labels, genre toggles, Ready, P-tags, wordmark. Archivo 700 at wdth 75%, uppercase."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Game and player names; 24-30px on the lead row."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running copy; lede 18px, max 52ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Meta lines, counts, fine print."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Single easing for wipes, rise-ins, spotlight and hover rotations."
+      },
+      {
+        "name": "bar-wipe-slot",
+        "value": "scaleX 0 to 1, 600ms, origin left",
+        "purpose": "Seat bar wipes in when a player joins."
+      },
+      {
+        "name": "bar-wipe-taste",
+        "value": "scaleX 0 to 1, 800ms, origin left",
+        "purpose": "Shared-taste fill bars."
+      },
+      {
+        "name": "rise-in",
+        "value": "opacity .6 to 1, translateY 8px to 0, 500ms, 45ms stagger capped at 8",
+        "purpose": "Result cards entering."
+      },
+      {
+        "name": "spotlight",
+        "value": "opacity and transform 200ms",
+        "purpose": "Ownership squares dim to 20% and the lit seat scales to 1.15."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "all durations 1ms",
+        "purpose": "prefers-reduced-motion collapses every animation and transition."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "xl",
+        "value": "1280px"
+      }
+    ],
+    "modes": {
+      "default": "dark",
+      "light": "Header toggle; html.light swaps neutrals to the light-* tokens, seat colors to the darker light-p* set, and Seat Ink to white."
+    }
+  },
+  "components": [
+    {
+      "name": "Start Button",
+      "kind": "button",
+      "refersTo": "button-start",
+      "description": "Primary action: names the action in Display type and carries the select-screen ready check.",
+      "html": "<button class=\"ds-start\"><span class=\"ds-start-label\">Find games</span><span class=\"ds-start-ready\">2/2 ready <svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></span></button>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-start{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;display:flex;align-items:center;justify-content:space-between;width:22rem;height:64px;padding:0 20px;background:var(--bone);color:var(--bg);border:0;border-radius:9px;cursor:pointer;transition:background .15s;}.ds-start:hover{background:color-mix(in oklab,var(--bone) 90%,transparent);}.ds-start:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}.ds-start-label{font-stretch:70%;font-weight:800;text-transform:uppercase;letter-spacing:-0.005em;line-height:.92;font-size:1.75rem;}.ds-start-ready{display:flex;align-items:center;gap:8px;font-size:14px;font-weight:600;font-variant-numeric:tabular-nums;}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary actions: Reroll, Steam store link, Clear filters.",
+      "html": "<button class=\"ds-btn-outline\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><rect width=\"12\" height=\"12\" x=\"2\" y=\"10\" rx=\"2\"/><path d=\"m17.92 14 3.5-3.5a2.24 2.24 0 0 0 0-3l-5-4.92a2.24 2.24 0 0 0-3 0L10 6\"/><path d=\"M6 18h.01\"/><path d=\"M10 14h.01\"/><path d=\"M15 6h.01\"/><path d=\"M18 9h.01\"/></svg>Reroll</button>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-btn-outline{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;font-size:16px;font-weight:600;background:var(--bg);color:var(--tx);border:1px solid var(--seam-a);border-radius:9px;cursor:pointer;transition:background .15s;}.ds-btn-outline:hover{background:var(--elev);}.ds-btn-outline:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}"
+    },
+    {
+      "name": "Player Slot",
+      "kind": "custom",
+      "refersTo": "player-slot",
+      "description": "A numbered seat: seat-color top bar that wipes in, P-number, Ready tag, Steam input.",
+      "html": "<div class=\"ds-slot\" style=\"--pc:var(--p1)\"><span class=\"ds-slot-bar\"></span><div class=\"ds-slot-head\"><span class=\"ds-slot-p\">P1</span><span class=\"ds-slot-who\">You</span><span class=\"ds-slot-ready\">Ready</span></div><input class=\"ds-input\" placeholder=\"Profile URL, SteamID64 or name\" value=\"gaben\"></div>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-slot{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;position:relative;display:flex;flex-direction:column;gap:16px;width:320px;padding:20px 16px 16px;background:var(--panel);border:1px solid color-mix(in oklab,var(--pc) 45%,var(--seam));border-radius:9px;overflow:hidden;}.ds-slot:focus-within{border-color:var(--pc);}.ds-slot-bar{position:absolute;inset:0 0 auto 0;height:4px;background:var(--pc);transform-origin:left;animation:ds-wipe 600ms var(--ease) both;}@keyframes ds-wipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}.ds-slot-head{display:flex;align-items:baseline;gap:10px;}.ds-slot-p{font-stretch:70%;font-weight:800;text-transform:uppercase;letter-spacing:-0.005em;line-height:.92;font-size:36px;color:var(--pc);}.ds-slot-who{font-size:14px;color:var(--muted);}.ds-slot-ready{font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;margin-left:auto;font-size:14px;color:var(--pc);}.ds-input{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;padding:10px 12px;font-size:16px;background:var(--bg);color:var(--bone);border:1px solid var(--seam-a);border-radius:9px;}.ds-input:focus-visible{outline:none;border-color:var(--bone);}"
+    },
+    {
+      "name": "Join Slot",
+      "kind": "custom",
+      "description": "Dashed empty seat that adds a player.",
+      "html": "<button class=\"ds-join\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M5 12h14\"/><path d=\"M12 5v14\"/></svg><span class=\"ds-join-t\">Add player 3</span><span class=\"ds-join-s\">Up to 6 players</span></button>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-join{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;width:320px;min-height:136px;background:transparent;color:var(--muted);border:1px dashed var(--seam-a);border-radius:9px;cursor:pointer;transition:color .2s,border-color .2s;}.ds-join svg{transition:transform .3s var(--ease);}.ds-join:hover{color:var(--bone);border-color:var(--muted);}.ds-join:hover svg{transform:rotate(90deg);}.ds-join:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}.ds-join-t{font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:18px;}.ds-join-s{font-size:12px;color:var(--dim);}"
+    },
+    {
+      "name": "Genre Toggle",
+      "kind": "chip",
+      "refersTo": "genre-toggle",
+      "description": "Pressable filter chip; pressed inverts to Bone.",
+      "html": "<div class=\"ds-row\"><button class=\"ds-genre\" aria-pressed=\"true\">Action</button><button class=\"ds-genre\" aria-pressed=\"false\">Indie</button><button class=\"ds-genre\" aria-pressed=\"false\">Strategy</button></div>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-row{display:flex;gap:8px;}.ds-genre{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;padding:6px 12px;font-size:14px;background:transparent;color:var(--toned);border:1px solid var(--seam-a);border-radius:6px;cursor:pointer;transition:color .15s,border-color .15s,background .15s;}.ds-genre:hover{color:var(--bone);border-color:var(--muted);}.ds-genre[aria-pressed=true]{background:var(--bone);border-color:var(--bone);color:var(--bg);}.ds-genre:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}"
+    },
+    {
+      "name": "Ownership Squares",
+      "kind": "chip",
+      "refersTo": "ownership-square",
+      "description": "Who owns a game: filled = owns, dashed = does not; spotlight dims the others and scales the lit seat.",
+      "html": "<ul class=\"ds-own-row\"><li class=\"ds-own owns\" style=\"--pc:var(--p1)\">P1</li><li class=\"ds-own missing\" style=\"--pc:var(--p2)\">P2</li><li class=\"ds-own owns\" style=\"--pc:var(--p3)\">P3</li><li class=\"ds-own missing\" style=\"--pc:var(--p4)\">P4</li></ul>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-own-row{display:flex;gap:6px;list-style:none;margin:0;padding:0;}.ds-own{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;display:flex;align-items:center;justify-content:center;width:32px;height:32px;font-size:14px;border-radius:6px;transition:opacity .2s var(--ease),transform .2s var(--ease);}.ds-own.owns{background:var(--pc);color:var(--p-ink);}.ds-own.missing{border:1px dashed color-mix(in oklab,var(--pc) 70%,transparent);color:var(--pc);}.ds-own-row:hover .ds-own{opacity:.2;}.ds-own-row:hover .ds-own:hover{opacity:1;transform:scale(1.15);}"
+    },
+    {
+      "name": "Game Card",
+      "kind": "card",
+      "refersTo": "game-card",
+      "description": "Ranked result: Bone rank block, title, Display match %, tags, ownership footer.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-img\"><span class=\"ds-rank\">2</span></div><div class=\"ds-card-body\"><div class=\"ds-card-top\"><div><h3 class=\"ds-card-t\">Deep Rock Galactic</h3><p class=\"ds-card-m\">Online Co-op · Cross-platform</p></div><p class=\"ds-score\"><span class=\"ds-score-n\">73</span><span class=\"ds-score-p\">%</span><span class=\"ds-score-l\">match</span></p></div><ul class=\"ds-tags\"><li class=\"hit\">Action</li><li>Shooter</li></ul><div class=\"ds-card-foot\"><span class=\"ds-meta\">1 of 2 own it · 97% positive</span><a class=\"ds-steam\" href=\"#\">Steam</a></div></div></article>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-card{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;width:340px;background:var(--panel);border:1px solid var(--seam);border-radius:9px;overflow:hidden;color:var(--tx);transition:border-color .2s;}.ds-card:hover{border-color:var(--seam-a);}.ds-card-img{position:relative;aspect-ratio:460/215;background:var(--elev);}.ds-rank{font-stretch:70%;font-weight:800;text-transform:uppercase;letter-spacing:-0.005em;line-height:.92;position:absolute;left:0;top:0;padding:6px 8px;font-size:24px;background:var(--bone);color:var(--bg);border-bottom-right-radius:9px;}.ds-card-body{display:flex;flex-direction:column;gap:16px;padding:16px;}.ds-card-top{display:flex;justify-content:space-between;gap:16px;}.ds-card-t{margin:0;font-size:18px;font-weight:600;line-height:1.375;color:var(--bone);}.ds-card-m{margin:4px 0 0;font-size:14px;color:var(--muted);}.ds-score{margin:0;text-align:right;}.ds-score-n{font-stretch:70%;font-weight:800;text-transform:uppercase;letter-spacing:-0.005em;line-height:.92;font-size:36px;color:var(--bone);}.ds-score-p{font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;font-size:18px;color:var(--muted);}.ds-score-l{display:block;font-size:12px;color:var(--dim);}.ds-tags{display:flex;gap:6px;list-style:none;margin:0;padding:0;}.ds-tags li{padding:2px 8px;font-size:12px;border:1px solid var(--seam-m);border-radius:6px;color:var(--muted);}.ds-tags li.hit{border-color:var(--seam-a);color:var(--bone);}.ds-card-foot{display:flex;justify-content:space-between;align-items:end;padding-top:16px;border-top:1px solid var(--seam-m);}.ds-meta{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums;}.ds-steam{padding:4px 10px;font-size:14px;font-weight:600;color:var(--tx);text-decoration:none;border:1px solid var(--seam-a);border-radius:9px;}.ds-steam:hover{background:var(--elev);}.ds-steam:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}"
+    },
+    {
+      "name": "Top Bar",
+      "kind": "nav",
+      "description": "Slim header: seat-square mark, Tag-type wordmark, ghost color-mode toggle.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-brand\" href=\"#\"><svg width=\"24\" height=\"24\" viewBox=\"0 0 24 24\"><rect x=\"1\" y=\"1\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#5b95ff\"/><rect x=\"13\" y=\"1\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#ff6058\"/><rect x=\"1\" y=\"13\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#45c46d\"/><rect x=\"13\" y=\"13\" width=\"10\" height=\"10\" rx=\"2\" fill=\"#ffb02e\"/></svg>Find Games Together</a><button class=\"ds-ghost\" aria-label=\"Switch to light mode\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\"><path d=\"M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z\"/></svg></button></header>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-nav{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;display:flex;align-items:center;justify-content:space-between;height:56px;padding:0 24px;background:var(--bg);border-bottom:1px solid var(--seam);}.ds-brand{font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;display:flex;align-items:center;gap:10px;font-size:18px;line-height:1;color:var(--bone);text-decoration:none;border-radius:6px;}.ds-ghost{display:flex;padding:6px;background:transparent;color:var(--tx);border:0;border-radius:9px;cursor:pointer;}.ds-ghost:hover{background:var(--elev);}.ds-brand:focus-visible,.ds-ghost:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}"
+    },
+    {
+      "name": "Seat Chip",
+      "kind": "chip",
+      "description": "Toolbar Highlight owner chip; pressed pins that player spotlight.",
+      "html": "<div class=\"ds-row\"><button class=\"ds-seat\" style=\"--pc:var(--p1)\" aria-pressed=\"true\">P1</button><button class=\"ds-seat\" style=\"--pc:var(--p2)\" aria-pressed=\"false\">P2</button></div>",
+      "css": ":host{--p1:#5b95ff;--p2:#ff6058;--p3:#45c46d;--p4:#ffb02e;--p-ink:#0f0f11;--bg:#0f0f11;--panel:#18181b;--elev:#1c1c20;--seam:#29292e;--seam-m:#202024;--seam-a:#3b3b42;--bone:#f2f1ec;--tx:#dcdcdf;--toned:#c3c3c8;--muted:#9c9ca4;--dim:#8a8a92;--ease:cubic-bezier(0.16,1,0.3,1);}.ds-row{display:flex;gap:6px;}.ds-seat{font-family:'Archivo Variable',ui-sans-serif,system-ui,'Segoe UI',sans-serif;font-stretch:75%;font-weight:700;text-transform:uppercase;letter-spacing:.02em;height:28px;padding:0 8px;font-size:14px;background:transparent;color:var(--pc);border:1px solid color-mix(in oklab,var(--pc) 60%,transparent);border-radius:6px;cursor:pointer;}.ds-seat[aria-pressed=true]{background:var(--pc);border-color:var(--pc);color:var(--p-ink);}.ds-seat:focus-visible{outline:2px solid var(--bone);outline-offset:2px;}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Player Select Screen",
+    "overview": "The group locks in the way players do on a co-op select screen: each person takes a numbered seat with a fixed color, the screen reads a ready check, and the result is a ranked lineup where every game shows, in those same seat colors, who it fits. The ground is near-black and flat, panels sit one tone up, and 1px seams do the structural work. Nothing glows and nothing is gradient-filled; the only saturated color on screen belongs to a player.\n\nType carries the arcade voice. One variable family, Archivo, is pulled condensed and heavy for display numerals, seat numbers and labels, and left at normal width for reading. Figures are tabular everywhere so match percentages and counts line up across a grid that is being read aloud over a screen-share. Density is moderate: the form fits above the fold at 1440x900, and the results grid is scannable from across a room.\n\nDark is the default and the home of the world; light mode exists behind the header toggle with deeper seat colors so identity stays legible on paper-white panels.",
+    "keyCharacteristics": [
+      "Flat near-black ground, tonal panels, 1px seams, no shadows, no gradients, no glow.",
+      "Six fixed seat colors (P1-P6) used only to mark who something belongs to.",
+      "Bone (near-white) is the one \"loud\" neutral: primary action, pressed toggle, rank block, results rule.",
+      "Condensed heavy uppercase Archivo for display and tags; normal-width Archivo for body; tabular figures.",
+      "Small, square-ish corners (6px and 9px); dashed outlines mean \"empty seat\" or \"doesn't own it\"."
+    ],
+    "rules": [
+      {
+        "name": "The Seat Color Rule",
+        "body": "A seat color marks who a thing belongs to and nothing else. Never use P1-P6 for status, success, error, links, emphasis or decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Neutral Alert Rule",
+        "body": "Errors and warnings are neutral outline alerts with an icon, never red, amber or green, so a message can never be mistaken for a player.",
+        "section": "colors"
+      },
+      {
+        "name": "The Bone Is Action Rule",
+        "body": "The one filled, high-contrast neutral (Bone in dark, Ink in light) is reserved for the primary action, a pressed/selected state, the rank block and data fills. It is never a large decorative surface.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Archivo is the only face. Hierarchy comes from width, weight and case, not from a second family or a system display face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "All figures are tabular; percentages, counts and ranks align across cards.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Seam Rule",
+        "body": "Surfaces separate by tone and a 1px seam. If something needs to stand out, invert it or give it its owner's color; never add a shadow.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do route every player-specific color through the seat custom property (`seat-1` to `seat-6` setting `--pc`) and the six P tokens, in both modes.",
+      "Do keep alerts, errors and warnings neutral outline with an icon.",
+      "Do use Display (Archivo 800, wdth 70%, uppercase) for numerals that matter: P-numbers, rank, match %, the start label.",
+      "Do keep the start button in the right-hand action column beside the genre toggles from 1024px so it stays above the fold, full width below that, with the label naming the action and the \"n/n ready\" count beside it.",
+      "Do show the match % that actually orders the results; never a decorative or rescaled score.",
+      "Do signal absence with a 1px dashed outline (empty seat, not owned, no results).",
+      "Do use expo-out (cubic-bezier(0.16, 1, 0.3, 1)) for wipes, rise-ins and spotlight, and collapse all motion under prefers-reduced-motion."
+    ],
+    "donts": [
+      "Don't use a seat color for status, links, buttons or decoration, and don't add a seventh hue.",
+      "Don't add shadows, glows or gradients to any surface.",
+      "Don't put a small uppercase label above a heading; the rank numeral and the lead row carry hierarchy, not a \"top pick\" style line.",
+      "Don't center the setup or wrap the form in a hero card; it stays left-aligned on the open ground.",
+      "Don't introduce a second typeface or a system display face; width and weight of Archivo do the work.",
+      "Don't fill large surfaces with Bone; it is for action, selection, rank and data fills."
+    ]
+  }
+}
